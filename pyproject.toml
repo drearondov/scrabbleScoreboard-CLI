@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "scrabbleScoreboard"
+version = "0.1.0-alpha"
+description = "CLI to interact with Scrabble Scoreboard API"
+authors = ["drearondov <andrea.estefania.rv@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.scripts]
+scrabbleScoreboard = "scrabbleScoreboard-CLI.main:app"
+
+[tool.poetry.dependencies]
+python = ">=3.7, <4.0"
+python-dotenv = "^0.15.0"
+rich = "^9.10.0"
+requests = "^2.25.1"
+typer = "^0.3.2"
+pyfiglet = "^0.8.post1"
+PyInquirer = "^1.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+factory-boy = "^3.2.0"
+tox = "^3.21.4"
+Sphinx = "^3.4.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
